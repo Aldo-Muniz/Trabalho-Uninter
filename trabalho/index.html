@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li><a href="#sobre" onclick="showSection('sobre')">Sobre mim</a></li>
+            <li><a href="#formacao" onclick="showSection('formacao')">Formação</a></li>
+            <li><a href="#contato" onclick="showSection('contato')">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Sobre mim -->
+    <section id="sobre" class="section-flex">
+        <div class="section-content1">
+            <h1 class="section-title">Sobre Mim</h1>
+            <br><br><br>
+            <h3>Me chamo Aldo Muniz e tenho 21 anos. Sou um estudante de Análise e Desenvolvimento de Sistemas pela UNINTER, mergulhando fundo no mundo da tecnologia e sempre buscando evoluir o meu conhecimento.
+                Morador de Morungaba, no interior de São Paulo, porém possuo o sonho de se mudar para São Paulo para conseguir construir um futuro na área de TI.
+                Sou novato na área de programação, e percebo que a cada projeto que vou desenvolvimento é uma oportunidade de aprendizado e crescimento. Apesar dos obstáculos, mantenho-me firme em minha jornada, sabendo que cada desafio me fortalece para os desafios futuros.
+                Além da programação, possuo alguns outros hobbies e formas de conseguir passar meu tempo livre. Sou um jogador de League of Legends, tendo a campeã Leona como minha MAIN e possuindo uma maestria máxima com a personagem.    
+                A música é uma parte essencial da minha vida, e artistas como Ariana Grande e Jão fazem parte da minha vida desde a minha adolescência e os consumo diaramente. Seja dançando na sala de estar ou relaxando com fones de ouvido, a música sempre me transporta para um lugar de paz e alegria. 
+                Em casa, divido meu espaço com minha mãe, minha irmã e meus dois sobrinhos. Um dos meus sobrinhos possui o Transtorno do Espectro Autista (TEA). Cuidar dele e apoiar minha família é uma prioridade fundamental em minha vida, e encontro grande satisfação em meu trabalho na escola, onde desempenho múltiplos papéis por estar sempre disposto a colaborar, realizando como principal a função de secretaria escolar e funções de Inspetor Escolar, tal qual ajudar as crianças no momento de intervalo e saída.
+                Em meio a todas as minhas responsabilidades e desafios, mantenho uma determinação inabalável em alcançar meus objetivos e fazer a diferença no mundo. Cada dia é uma oportunidade para aprender, crescer e compartilhar amor e compaixão com aqueles ao meu redor. E com cada passo dado, sei que estou mais perto de realizar meus sonhos e criar um futuro brilhante para mim e para aqueles que amo.</h3>
+                <br><br><br><br><br><br>
+        </div>
+        <img src="minhafoto.jpeg" alt="Foto sobre mim" width="640" height="660">
+    </section>
+
+    <!-- Seção Formação -->
+    <section id="formacao" class="section-flex" style="display: none;">
+        <div class="section-content1">
+            <h1 class="section-title">Formação</h1>
+            <br>
+            <h3>Sou formado no Ensino Médio no ano de 2020, no primeiro ano de pandemia. Em agosto de 2021 iniciei uma faculdade de Análise e Desenvolvimento de Sistemas porém a instituição não me agradou e sentia que não estava adquirindo nenhum conhecimento necessário. Em Julho de 2022 realizei a matrícula na faculdade UNINTER pela qual sigo até hoje, realizando diversos projeto e sempre evoluindo meus conhecimentos. Esse ano me formo e estarei à procura de iniciar uma segunda faculdade na área de dados.</h3>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <img src="formaturafoto.jpeg" alt="Foto sobre minha formação" width="550" height="550">
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section-flex" style="display: none;">
+        <div class="section-content">
+            <h1>Contato</h1>
+            <h3> Entre em contato comigo respondendo o formulário abaixo e preenchendo com seus dados corretamentes! <br> Obrigado pela visita, volte sempre!</h3>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <img src="fotominha.jpeg" alt="Foto de contato" width="550" height="650">
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            // Oculta todas as seções
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Mostra a seção desejada
+            var section = document.getElementById(sectionId);
+            section.style.display = 'flex'; // Altera para 'flex' para manter o layout flexível
+        }
+    </script>
+</body>
+</html>

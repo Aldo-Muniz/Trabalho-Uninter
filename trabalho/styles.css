@@ -1,0 +1,109 @@
+/* Resetando margens e padding padrão */
+body, h1, p, ul, li, form, label, input, textarea, button, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilizando a barra de navegação */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilizando as seções com flexbox */
+.section-flex {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.section-content {
+    flex: 1;
+    text-align: center;
+}
+
+.section-content h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section-content p {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.section-flex img {
+    max-width: 40%;
+    height: auto;
+    border: 5px solid #333; /* Moldura da imagem */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+/* Estilizando o formulário de contato */
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section-content {
+    max-width: 5000px; /* Definindo uma largura máxima para o conteúdo */
+    margin: 0 auto; /* Centralizando o conteúdo horizontalmente */
+}
+
+.section-content1 {
+    text-align: left
+}
+
+.section-title {
+    text-align: center; /* Centralizando o título */
+}
